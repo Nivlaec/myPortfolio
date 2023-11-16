@@ -1,2 +1,2 @@
 # myPortfolio
-My Porttfolio
+MUNI university hostel management app project
