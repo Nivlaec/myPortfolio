@@ -1,0 +1,79 @@
+#form-container{
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    animation: fadeInUp 1s ease;
+}
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and(max-width: 700px){
+    #img1{
+        display: none;
+    }
+}
+
+/*
+<?php
+if (isset($_POST['submit'])) {
+    // Retrieve form data
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $program = $_POST['program'];
+    $gender = $_POST['gender'];
+    $email = $_POST['email'];
+    $tel = $_POST['tel'];
+
+ // TODO: Perform database connection and insertion here
+    $conn = new mysqli($servername, $username, $password, $muni_hostels);
+
+// Check the connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Retrieve form data
+$fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $program = $_POST['program'];
+    $gender = $_POST['gender'];
+    $email = $_POST['email'];
+    $tel = $_POST['tel'];
+
+
+// Insert data into the database
+$sql = "INSERT INTO registration VALUES ('$name', '$email', '$message')";
+
+if ($conn->query($sql) === true) {
+    echo "Record added successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+// Close the database connection
+$conn->close();
+
+    // For testing purposes, you can echo the values
+    echo "First Name: $fname<br>";
+    echo "Gender: $gender<br>";
+    echo "Email: $email<br>";
+    echo "Telephone: $tel<br>";
+}
+?>
+*/
+
+/*mysqli
+
+*/

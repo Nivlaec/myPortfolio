@@ -1,0 +1,252 @@
+/* styles.css */
+/*
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-container {
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.carousel-caption {
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; // Adjust margin as needed
+}
+button{
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+}
+
+.card {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #eee;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}*/
+
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 33.33%;
+    box-sizing: border-box;
+    position: relative; /* Ensure relative positioning for absolute captions */
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.carousel-caption {
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.carousel-buttons button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+}
+
+.card {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #eee;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel {
+        width: 300%; /* Maintain 3 images in a row for small screens */
+        flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+        overflow-x: auto; /* Allow horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Enable snapping to each image */ 
+    }
+
+    .carousel-item {
+        width: 100%;
+        scroll-snap-align: start;
+    }
+
+    .carousel-caption {
+        padding: 10px;
+    }
+
+    .carousel-buttons {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        padding: 0 10px;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .carousel-buttons div {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+    } 
+
+    .carousel-buttons button {
+        margin-top: 10px;
+    }
+}
+
+/* Additional styles for screens smaller than 640px */
+@media only screen and (max-width: 640px) {
+    .carousel-caption {
+        padding: 5px;
+    }
+}
+
+/* Responsive Styles 
+@media only screen and (max-width: 768px) {
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-item {
+        width: 100%;
+    }
+
+    .carousel-caption {
+        padding: 10px;
+    }
+
+    .carousel-buttons {
+        flex-direction: column;
+        position: static;
+    }
+
+    .carousel-buttons button {
+        margin-top: 10px;
+    }
+}*/
+
+/*
+.content {
+    padding: 20px;
+}
+
+.card {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #eee;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}*/
+
