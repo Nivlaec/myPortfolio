@@ -22,9 +22,10 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
+    margin-bottom: 3rem;
 }
 
-.bank-info, .mobile-money-info {
+.bank-info{
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -35,18 +36,24 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
+.bank-info img{
+    max-width: 100%;
+    height: auto;
+}
 
 .bank-info:hover, .mobile-money-info:hover {
     transform: scale(1.05);
 }
 
 footer {
+    font-size: large;
     background-color: #4285f4;
     color: #fff;
     text-align: center;
     padding: 10px;
     position: fixed;
-    bottom: 0;
+    height: 1.5rem;
+    bottom: 0rem;
     width: 100%;
 }
 /* Responsive Styles */

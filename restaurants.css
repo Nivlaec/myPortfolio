@@ -4,11 +4,26 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
 }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
 
 .card {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 510px;
+}
+.card img{
+    max-width: 100%;
+    height: auto;
 }
 
 .card:hover {
@@ -29,6 +44,7 @@ body {
 
 #footer {
     margin-top: auto;
+    text-align: center;
 }
 
 
